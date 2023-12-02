@@ -17,6 +17,6 @@ public class SplashActivity extends AppCompatActivity {
                 startActivity(i);
                 finish();
             }
-        }, 3000); //1 second = 1000
+        }, 1000); //1 second = 1000
     }
 }
