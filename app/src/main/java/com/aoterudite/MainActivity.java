@@ -8,12 +8,14 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 
 public class MainActivity extends AppCompatActivity {
+    protected WebView webView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        WebView webView = findViewById(R.id.MainWebView);
+        webView = findViewById(R.id.MainWebView);
 
         initWebSettings(webView);
 
