@@ -48,6 +48,9 @@ html, .nav {
     --fs-sm: 1.2rem;
     --fs-base: 1.6rem;
     --fs-md: 2rem;
+    --fs-lg: 2.4rem;
+    --fs-xl: 2.8rem;
+    --fs-xxl: 3.2rem;
 
     --fw-700: 700;
 
@@ -123,8 +126,44 @@ video {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: inherit;
     color: inherit;
+}
+
+/* ========================================
+ * REUSABLES
+ * ========================================
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ */
+.h2 {
+    font-weight: bold;
+    font-size: var(--fs-xl);
+    line-height: 150%;
 }
 
 /* ========================================
@@ -284,7 +323,7 @@ a {
 }
 
 .introduction {
-    line-height: 200%;
+    line-height: 250%;
 }
 
 /* ========================================
@@ -319,6 +358,10 @@ a {
  */
 .categories-header {
     background-color: var(--theme-categories-bg-color);
+    position: fixed;
+    inset: 0;
+    bottom: unset;
+    z-index: 999;
 }
 
 .categories-header__body {
@@ -328,6 +371,123 @@ a {
 .categories-header__title {
     font-weight: var(--fw-700); 
     font-size: var(--fs-md);
+}
+
+.card-container {
+    padding-inline: 1rem
+}
+
+.categories-main {
+    margin-top: 5.6rem;
+    margin-bottom: 4.6rem;
+}
+
+.card {
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-block: 1rem;
+}
+
+.card__image {
+    max-width: 100%;
+}
+
+.card__title-container {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-shadow: 0px -200px 121px -100px rgb(0, 0, 0) inset;
+
+}
+
+.card__title {
+    margin-inline: 1rem;
+    padding-block: 1.5rem;
+    font-weight: var(--fw-700);
+    font-size: 3.2rem;
+    line-height: initial;
+    /* color: black; */
+}
+
+/* ========================================
+ * ARTICLE PAGE
+ * ========================================
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ */
+.article-header {
+    position: fixed;
+    inset: 0;
+    bottom: unset;
+    background-image: linear-gradient(180deg, #151515 0%, rgba(21, 21, 21, 0.1) 100%);
+}
+
+.article-header__body {
+    display: flex;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+
+.article-header__back-btn {
+    margin-right: 2rem;
+}
+
+.article-header__back-btn > svg {
+    width: 2.4rem;
+}
+
+.article-header__title {
+    font-weight: 700;
+    font-size: var(--fs-md);
+}
+
+.article-main {
+    margin-top: 6rem;
+}
+
+.article {
+    margin-inline: 1rem;
+    line-height: 250%;
+}
+
+.article__body {
+    margin-inline: auto;
+    max-width: 45ch;
+}
+
+.article__section {
+    margin-block: 5rem;
+}
+
+.article__section > p {
+    margin-block: 2rem;
 }
 
 /* ========================================
