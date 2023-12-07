@@ -357,16 +357,25 @@ a {
 }
 
 .home-main__body {
+    margin-inline: auto;
+    max-width: 45ch;
     padding: 3rem 1rem;
 }
 
-.home-main__body {
-    margin-inline: auto;
-    max-width: 45ch;
+.home-main__body > section {
+    margin-block: 5rem;
 }
 
 .introduction {
     line-height: 250%;
+}
+
+.featured {
+    padding: 0 !important;
+}
+
+.featured > a {
+    margin-block: 2rem;
 }
 
 /* ========================================
@@ -417,6 +426,8 @@ a {
 }
 
 .card-container {
+    margin-inline: auto;
+    max-width: 64rem;
     padding-inline: 1rem
 }
 
@@ -427,9 +438,9 @@ a {
 
 .card {
     position: relative;
+    margin-block: 1rem;
     border-radius: 1rem;
     overflow: hidden;
-    margin-block: 1rem;
 }
 
 .card__image {
@@ -597,6 +608,81 @@ a {
     border-radius: .5rem;
     padding: 2rem .5rem;
     background-color: var(--clr-neutral-600);
+}
+
+/* ========================================
+ * SETTINGS PAGE / ABOUT
+ * ========================================
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ */
+.settings-about-header {
+    position: fixed;
+    inset: 0;
+    bottom: unset;
+    z-index: 999;
+}
+
+.settings-about {
+    margin-block: 6.4rem 4.6rem;
+}
+
+.settings-about__body {
+    margin-inline: 1rem;
+    padding-block: 1rem;
+    line-height: 250%;
+}
+
+.settings-about__body > section {   
+    margin-inline: auto;
+    margin: 5rem auto;
+    max-width: 45ch;
+}
+
+.settings-about__body p {
+    margin-block: 2rem;
+}
+
+.settings-about__logo-container {
+    text-align: center;
+}
+
+.settings-about__logo-img-container {
+    margin-block: 2rem;
+}
+
+.settings-about__logo-img {
+    margin-inline: auto;
+    max-width: 15.2rem;
+}
+
+.settings-about__quote {
+    font-style: oblique;
+    opacity: .75;
 }
 
 /* ========================================
