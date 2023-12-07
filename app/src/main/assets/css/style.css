@@ -7,6 +7,11 @@ html, .nav {
     width: 100%;
 }
 
+/* Temporary solutions */
+::-webkit-scrollbar {
+    display: none;
+}
+
 /* ========================================
  * GLOBALS
  * ========================================
@@ -100,6 +105,10 @@ html, .nav {
     font: inherit;
 }
 
+html, body {
+    scroll-behavior: smooth;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -164,6 +173,40 @@ a {
     font-weight: bold;
     font-size: var(--fs-xl);
     line-height: 150%;
+}
+
+[data-state="shown"] {
+    display: block !important;
+}
+
+[data-state="hidden"] {
+    display: none !important;
+}
+
+#scroll-top {
+    position: fixed;
+    inset: 0;
+    top: unset;
+}
+
+.scroll-top__body {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.scroll-top__body > a {
+    --margin: 1rem;
+    margin-right: var(--margin);
+    margin-bottom: var(--margin);
+    border-radius: 5rem;
+    background-color: var(--clr-neutral-700);
+    padding: 1rem;
+    width: fit-content;
+    opacity: .8;
+}
+
+.scroll-top__body > a > svg {
+    width: 2.4rem;
 }
 
 /* ========================================
